@@ -1,0 +1,195 @@
+/* All elements on the page */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    color: #eee;
+}
+
+body {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9defe9), to(#bc82d4)) fixed;
+    max-width: 950px;
+    font-size: 18px;
+    padding-top: 70px;
+    margin:  auto;  
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #7f7dbf;
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    width: 950px;
+}
+
+/* Elements with the ID "title" */
+#title {
+    font-family: sans-serif;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px 2px #000
+}
+
+/* Elements with the ID "subtitle" */
+#subtitle {
+    font-family: sans-serif;
+    text-align: center;
+    padding-bottom: 25px;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 20px;
+
+}
+
+.dadospessoais,
+.dadosprofissionais {
+    padding: 10px;
+    margin: 10px;
+}
+
+.dadospessoais {
+    margin-bottom: 20px;
+}
+
+.campo {
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.campo label {
+    height: 30px;
+    width: 400px;
+    font-weight: bold;
+}
+
+.campo input {
+    height: 35px;
+    width: 400px;
+    margin-top: 5px;
+    padding-left: 5px;
+    color: rgb(118, 118, 118);
+}
+
+.campo select {
+    height: 35px;
+    width: 400px;
+    margin-top: 5px;
+    padding-left: 5px;
+    color: rgb(118, 118, 118);
+}
+
+.campo textarea {
+    width: 400px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    color:rgb(118, 118, 118);
+}
+
+.campo_radio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+input[type="radio" i] {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+
+
+.grupo {
+    margin-bottom: 10px;
+}
+
+.grupo label {
+    display: inline-block;
+}
+
+.grupo .campo {
+    padding-bottom: 0;
+    
+}
+
+.grupo_table td {
+    padding-right: 10px;
+    padding: 4px;
+    font-size: 15px;
+}
+
+input[type="checkbox" i] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}
+
+.cadastro {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+input[type="submit" i],
+input[type="reset" i] {
+    height: 40px;
+    width: 120px;
+    align-items: center;
+    font-size: 15px;
+    color: #eee;
+    background-color: #504cc1;
+    border-radius: 8px;
+    border: none;
+    margin: 10px;
+}
+
+input[type="submit" i]:hover,
+input[type="reset" i]:hover {
+    font-weight: bold;
+    background-color: #211bb9;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all; 
+}
+
+input[type="submit" i]:active
+input[type="reset" i]:active {
+    transform: scale(1);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 0.5px solid #eee;
+    height: 430px;
+    width: 420px;
+}
+
+fieldset legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #eee;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.formulario {
+    display: flex;
+}
+
+.divdadospessoais,
+.divdadosprofissionais {
+    flex: 1;
+}

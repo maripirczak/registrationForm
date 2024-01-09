@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/formulario.css" media="screen"/>
+
+    <!-- Page title -->
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header with title and subtitle -->
+        <div class="inicio">
+            <h1 id="title">Cadastro de desenvolvedor</h1>
+            <p id="subtitle">Preencha suas informações</p>
+        </div>
+
+        <!-- Start of form -->
+        <form class="formulario" method="post" action="" enctype="multipart/form-data">
+
+        <div class="divdadospessoais">
+
+            <fieldset class="dadospessoais">
+                <legend>Dados Pessoais</legend>
+                <div class="campo">
+                    <label for="nome">Nome</label></br>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required/>
+                </div>
+                
+                <div class="campo">
+                    <label for="sobrenome">Sobrenome</label></br>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required/>
+                </div>
+
+                <div class="campo">
+                    <label>Data nascimento</label></br>
+                    <input type="date" name="birthdate" id="birthdate"required/>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome">E-mail</label></br>
+                    <input type="text" name="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Digite seu e-mail" required/>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone</label></br>
+                    <input type="tel" name="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required/>
+                </div>
+            </fieldset>
+
+        </div>
+        <div class="divdadosprofissionais">
+
+            <fieldset class="dadosprofissionais">
+                <legend>Dados Profissionais</legend>
+                <div class="campo_radio">
+                    <label for="desenvolvimento" style="font-weight: bold;">Qual o seu campo de desenvolvimento?</label>
+                    <table> 
+                        <td> 
+                            <label for="frontend" style="font-size: 15px;">
+                             <input type="radio" id="frontend" name="front" value="front"/>Front-end
+                            </label>
+                        </td>
+                        <td> 
+                            <label for="backend" style="font-size: 15px;">
+                            <input type="radio" id="backend" name="backend" value="backend" />Back-end
+                            </label>
+                        </td>
+                        <td>
+                            <label for="fullstack" style="font-size: 15px;">
+                            <input type="radio" id="fullstack" name="fullstack" value="fullstack" />Fullstack
+                            </label>   
+                        </td>
+                    </table>
+                </div>
+
+                <div class="campo">
+                    <label for="senioridade">Senioridade</label></br>
+                    <select id="senioridade" required>
+                        <option value="" style="color: rgb(118, 118, 118);">Selecione</option>
+                        <option value="junior" style="color: black;">Júnior</option>
+                        <option value="pleno" style="color: black;" >Pleno</option>
+                        <option value="senior" style="color: black;">Sênior</option>
+                        <option value="especialista" style="color: black;">Especialista</option>
+                    </select>
+                </div>
+
+                <div class="grupo">
+                    <label class="campo" for="tecnologias">Selecione as tecnologias que utiliza:</label>
+                    <table class="grupo_table">
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML"/>
+                                <label for="tecnologia1">HTML</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS"/>
+                                <label for="tecnologia2">CSS</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="tecnologia3" name="tecnologia1" value="Javascript"/>
+                                <label for="tecnologia3">Javascript</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="tecnologia4" name="tecnologia3" value="PHP"/>
+                                <label for="tecnologia4">PHP</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="tecnologia5" name="tecnologia4" value="C#"/>
+                                <label for="tecnologia5">C#</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="tecnologia6" name="tecnologia5" value="Java"/>
+                                <label for="tecnologia6">Java</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="tecnologia7" name="tecnologia6" value="Phyton"/>
+                                <label for="tecnologia7">Phyton</label>
+                            </td>
+                            <td><input type="checkbox" id="tecnologia8" name="tecnologia7" value="Node.js"/>
+                                <label for="tecnologia1">Node.js</label>
+                            </td>
+                            <td><input type="checkbox" id="tecnologia9" name="tecnologia8" value="Angular"/>
+                                <label for="tecnologia8">Angular</label>
+                            </td>
+                            <td><input type="checkbox" id="tecnologia10" name="tecnologia9" value="React"/>
+                                <label for="tecnologia9">Laravel</label>
+                            </td>
+                        </tr>
+                    </table> 
+                </div>
+
+                <div class="campo">
+                    <label for="experiencia">Conte um pouco mais da sua experiência:</label></br>
+                    <textarea name="experiencia" id="experiencia" rows="8" placeholder="Conte um pouco das suas expêriencias, suas conquistas e seus aprendizados" required></textarea> 
+                </div>
+        
+            </fieldset>
+
+            <div class="cadastro">
+                <input type="reset" value="Limpar"/>
+                <input type="submit" value="Cadastrar"/>
+            </div>
+
+        </div>
+
+        </form>
+    </div>  
+</body>
+</html>
